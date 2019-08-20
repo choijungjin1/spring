@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html xmlns:th="https://thymeleaf.org">
     <head>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="../../static/js/bootstrap.min.js" th:src="@{/js/bootstrap.min.js}"></script>        
     </head>
     <body>
-        <a href="./list.html" th:href="@{/member/list}">List</a>
-        <a href="./delete.html" th:href="@{/member/delete}">delete</a>
-        <a href="./edit.html" th:href="@{/member/edit}">edit</a>
-        <a href="./view.html" th:href="@{/member/view}">view</a>
-        <a href="./login.html" th:href="@{/member/login}">login</a>
-        <a href="./logout.html" th:href="@{/member/logout}">logout</a>
-        <a href="./signup.html" th:href="@{/member/signup}">signup</a>
+        <ul class="list-group">
+            <li class="list-group-item"><a href="./list.html" th:href="@{/member/list}">List</a></li>
+            <li class="list-group-item"><a href="./delete.html" th:href="@{/member/delete}">delete</a></li>
+            <li class="list-group-item"><a href="./edit.html" th:href="@{/member/edit}">edit</a></li>
+            <li class="list-group-item"><a href="./view.html" th:href="@{/member/view}">view</a></li>
+            <li class="list-group-item"><a href="./login.html" th:href="@{/member/login}">login</a></li>            
+            <li class="list-group-item"><a href="./logout.html" th:href="@{/member/logout}">logout</a></li>
+            <li class="list-group-item"><a href="./signup.html" th:href="@{/member/signup}">signup</a></li>
+        </ul>
     </body>
 </html>
